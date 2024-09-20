@@ -100,7 +100,7 @@ export default function About() {
                     href={cv}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex gap-3 items-center lg:mt-5 bg-primary text-white rounded-xl w-fit px-8 py-3 font-medium"
+                    className="flex gap-3 items-center lg:mt-5 mt-2 bg-primary text-white rounded-xl w-fit px-8 py-3 font-medium"
                   >
                     <p>Download CV</p>
                     <i className="text-xl uil uil-file-alt"></i>

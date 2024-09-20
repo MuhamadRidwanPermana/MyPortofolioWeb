@@ -164,7 +164,7 @@ export default function Web() {
           <>
             <div
               key={item.id}
-              className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500 grayscale hover:grayscale-0"
+              className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500"
             >
               <div className="lg:w-96 w-full h-auto">
                 <img

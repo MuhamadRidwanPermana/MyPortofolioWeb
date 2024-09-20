@@ -111,7 +111,7 @@ export default function Design() {
       </div> */}
 
       <div className="animate__FadeIn w-full h-full justify-center grid lg:grid-cols-2 gap-16 duration-150">
-        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500 grayscale hover:grayscale-0">
+        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500">
           <div className="lg:w-96 w-full h-auto">
             <img
               src={Images_project_design1}
@@ -158,7 +158,7 @@ export default function Design() {
           footer={null}
           width={1100}
         >
-          <div className="w-full h-full grid lg:gap-8 lg:p-5 gap-3 py-8">
+          <div className="w-full h-full grid lg:gap-8 lg:p-5 gap-3 pt-8 pb-3">
             <div>
               <img
                 src={Images_project_design1}
@@ -219,7 +219,7 @@ export default function Design() {
           footer={null}
           width={1100}
         >
-          <div className="w-full h-full grid lg:gap-8 lg:p-5 gap-3 py-8">
+          <div className="w-full h-full grid lg:gap-8 lg:p-5 gap-3 pt-8 pb-3">
             <div>
               <img
                 src={Images_project_design2}

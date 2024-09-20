@@ -47,7 +47,10 @@ export default function Navbar() {
 
   return (
     <>
-      <nav id="navbarDesktop" className="flex items-center justify-between mx-auto lg:w-full h-16 text-primary lg:px-[10%] px-8 lg:sticky lg:top-0 lg:z-10 z-50 fixed w-full bottom-0 bg-white border-t border-secondary">
+      <nav
+        id="navbarDesktop"
+        className="flex items-center justify-between mx-auto lg:w-full h-16 text-primary lg:px-[10%] px-8 lg:sticky lg:top-0 lg:z-10 z-50 fixed w-full bottom-0 bg-white border-t border-secondary"
+      >
         <h1 className="font-medium cursor-pointer text-xl lg:text-lg" id="home">
           Ridwan
         </h1>
@@ -93,7 +96,7 @@ export default function Navbar() {
           <i className="uil uil-minus text-2xl cursor-pointer lg:hidden "></i>
         </button>
 
-        <ul className="flex gap-10 justify-center text-primary" >
+        <ul className="flex gap-10 justify-center text-primary">
           {menu.map((item) => (
             <>
               <div
@@ -122,7 +125,10 @@ export default function Navbar() {
           ))}
         </ul>
       </nav>
-      <div className="lg:hidden top-0 z-10 w-full h-full duration-500" id="overlay"></div>
+      <div
+        className="lg:hidden top-0 z-10 w-full h-full duration-500"
+        id="overlay"
+      ></div>
     </>
   );
 }
