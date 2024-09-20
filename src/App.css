@@ -1,0 +1,85 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* section{
+  margin:11rem 0;
+} */
+
+.mouse-scroll {
+  width: 20px;
+  height: auto;
+}
+
+.arrow-scroll {
+  rotate: 90deg;
+  width: 30px;
+  height: auto;
+}
+
+.animate__SlideUp {
+  animation: SlideUp 0.5s;
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate__slideUp {
+  animation: slideUp 0.5s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate__FadeIn {
+  animation: FadeIn 0.5s;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__fadeIn {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }
+}
+
+.showButton {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  animation-duration: 1s;
+}
+
