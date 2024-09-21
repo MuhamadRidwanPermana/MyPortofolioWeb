@@ -13,8 +13,8 @@ const projectsDesign = [
     description: "UI Design for Note App.",
     image: Images_project_design1,
     textColor: "text-[#FB923C]",
-    bgColor: "bg-[#FB923C]",
-    borderColor: "border-[#FB923C]",
+    bgColor: "bg-primary",
+    borderColor: "border-primary",
     techStack: [
       {
         id: 1,
@@ -28,9 +28,9 @@ const projectsDesign = [
     title: "Weather App UI Design",
     description: "UI Design for Weather App.",
     image: Images_project_design2,
-    textColor: "text-[#444444]",
-    bgColor: "bg-[#444444]",
-    borderColor: "border-[#444444]",
+    textColor: "text-primary",
+    bgColor: "bg-primary",
+    borderColor: "border-primary",
     techStack: [
       {
         id: 1,
@@ -97,7 +97,7 @@ export default function Design() {
                 <a
                   href={item.url}
                   target="_blank"
-                  className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 ${item.borderColor} border-opacity-50`}
+                  className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b ${item.borderColor} border-opacity-50`}
                 >
                   <button className="w-fit h-fit text-xs text-primary">
                     {item.textButton}
@@ -111,7 +111,7 @@ export default function Design() {
       </div> */}
 
       <div className="animate__FadeIn w-full h-full justify-center grid lg:grid-cols-2 gap-16 duration-150">
-        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500">
+        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 border-primary">
           <div className="lg:w-96 w-full h-auto">
             <img
               src={Images_project_design1}
@@ -122,7 +122,7 @@ export default function Design() {
           <div className="w-full h-auto mt-5 grid gap-7">
             <div className="w-full h-auto grid gap-5">
               <div className="w-fit h-fit">
-                <h1 className="font-semibold text-lg text-[#FB923C]">
+                <h1 className="font-semibold text-lg text-primary">
                   UI Design YourNote. App
                 </h1>
                 <p className="font-light text-xs">
@@ -130,18 +130,18 @@ export default function Design() {
                 </p>
               </div>
               <div className="w-fit h-fit grid items-center gap-1">
-                <h1 className="font-medium text-sm text-[#FB923C]">
+                <h1 className="font-medium text-sm text-primary">
                   Tech Stack
                 </h1>
                 <div className="w-fit h-fit flex items-center gap-1">
-                  <p className="font-light text-[10px] bg-[#FB923C] bg-opacity-10 border border-[#FB923C] border-opacity-40 text-[#FB923C] w-fit h-fit px-1 py-0.5 rounded">
+                  <p className="font-light text-[10px] bg-primary bg-opacity-10 border border-primary border-opacity-40 text-primary w-fit h-fit px-1 py-0.5 rounded">
                     Figma
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 border-[#FB923C] border-opacity-50"
+              className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b border-primary border-opacity-50"
               onClick={() => showModal(1)}
             >
               <button className="w-fit h-fit text-xs text-primary">
@@ -167,14 +167,14 @@ export default function Design() {
               />
             </div>
             <div className="w-full h-auto text-center">
-              <h1 className="font-semibold lg:text-lg text-md text-[#FB923C]">
+              <h1 className="font-semibold lg:text-lg text-md text-primary">
                 UI Design YourNote. App
               </h1>
             </div>
           </div>
         </Modal>
 
-        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500 grayscale hover:grayscale-0">
+        <div className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 border-primary">
           <div className="lg:w-96 w-full h-auto">
             <img
               src={Images_project_design2}
@@ -185,24 +185,24 @@ export default function Design() {
           <div className="w-full h-auto mt-5 grid gap-7">
             <div className="w-full h-auto grid gap-5">
               <div className="w-fit h-fit">
-                <h1 className="font-semibold text-lg text-[#444444]">
+                <h1 className="font-semibold text-lg text-primary">
                   UI Design Weather App
                 </h1>
                 <p className="font-light text-xs">UI Design for Weather App</p>
               </div>
               <div className="w-fit h-fit grid items-center gap-1">
-                <h1 className="font-medium text-sm text-[#444444]">
+                <h1 className="font-medium text-sm text-primary">
                   Tech Stack
                 </h1>
                 <div className="w-fit h-fit flex items-center gap-1">
-                  <p className="font-light text-[10px] bg-[#444444] bg-opacity-10 border border-[#444444] border-opacity-40 text-[#444444] w-fit h-fit px-1 py-0.5 rounded">
+                  <p className="font-light text-[10px] bg-primary bg-opacity-10 border border-primary border-opacity-40 text-primary w-fit h-fit px-1 py-0.5 rounded">
                     Figma
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 border-[#444444] border-opacity-50"
+              className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b border-primary border-opacity-50"
               onClick={() => showModal(2)}
             >
               <button className="w-fit h-fit text-xs text-primary">

@@ -121,16 +121,16 @@ export default function Hero() {
             <div>
               <p className="text-primary text-sm lg:w-3/4">
                 Someone who has interests and talents in the world of
-                technology, such as web development and design.
+                technology, such as <span className="font-semibold">Frontend Web Development</span> and <span className="font-semibold">Design</span>.
               </p>
-              <button className="lg:mt-5 mt-10 bg-primary text-white rounded-xl w-32 py-3 font-medium" onClick={(e) => {
+              <button className="lg:mt-5 mt-10 bg-primary text-white rounded-xl w-fit h-fit px-5 py-3 font-medium" onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({
                   top: document.querySelector(`#contact`).offsetTop,
                   behavior: "smooth",
                 });
               }}>
-                Hire Me
+                Here me
               </button>
             </div>
             <div className="lg:flex hidden justify-start items-center gap-3">

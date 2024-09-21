@@ -49,9 +49,6 @@ export default function Projects() {
       title: "Tahungoding",
       description: "Official Website for Tahungoding",
       image: Images_project_web1,
-      textColor: "text-[#e8ca21]",
-      bgColor: "bg-[#e8ca21]",
-      borderColor: "border-[#e8ca21]",
       techStack: [
         {
           id: 1,
@@ -74,9 +71,6 @@ export default function Projects() {
       title: "Smart Grosir Lite",
       description: "A Lite version of Smart Grosir",
       image: Images_project_web2,
-      textColor: "text-[#1f8bff]",
-      bgColor: "bg-[#1f8bff]",
-      borderColor: "border-[#1f8bff]",
       techStack: [
         {
           id: 1,
@@ -99,9 +93,6 @@ export default function Projects() {
       title: "Weather App",
       description: "Weather App using OpenWeather API and PWA",
       image: Images_project_mobile1,
-      textColor: "text-[#444444]",
-      bgColor: "bg-[#444444]",
-      borderColor: "border-[#444444]",
       techStack: [
         {
           id: 1,
@@ -120,9 +111,6 @@ export default function Projects() {
       title: "YourNote. App",
       description: "Note App using LocalStorage and PWA",
       image: Images_project_mobile2,
-      textColor: "text-[#FB923C]",
-      bgColor: "bg-[#FB923C]",
-      borderColor: "border-[#FB923C]",
       techStack: [
         {
           id: 1,
@@ -141,9 +129,6 @@ export default function Projects() {
     //   title: "YourNote. App UI Design",
     //   description: "UI Design for Note App.",
     //   image: Images_project_design1,
-    //   textColor: "text-[#FB923C]",
-    //   bgColor: "bg-[#FB923C]",
-    //   borderColor: "border-[#FB923C]",
     //   techStack: [
     //     {
     //       id: 1,
@@ -157,9 +142,6 @@ export default function Projects() {
     //   title: "Weather App UI Design",
     //   description: "UI Design for Weather App.",
     //   image: Images_project_mobile1,
-    //   textColor: "text-[#444444]",
-    //   bgColor: "bg-[#444444]",
-    //   borderColor: "border-[#444444]",
     //   techStack: [
     //     {
     //       id: 1,
@@ -206,9 +188,9 @@ export default function Projects() {
             {category.map((item) => (
               <button
                 key={category.id}
-                className={`px-3 py-1 rounded-lg overflow-hidden text-primary hover:text-white hover:bg-primary transition-all duration-200 ${
+                className="px-3 py-1 rounded-lg overflow-hidden text-primary hover:text-white hover:bg-primary transition-all duration-200 ${
                   Category === item.id ? "bg-primary text-white" : "bg-white"
-                } `}
+                } "
                 onClick={() => handleCategory(item.id)}
               >
                 <h1>{item.title}</h1>
@@ -249,7 +231,7 @@ export default function Projects() {
               <>
                 <div
                   key={item.id}
-                  className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500"
+                  className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 border-primary"
                 >
                   <div className="lg:w-96 w-full h-auto">
                     <img
@@ -262,14 +244,14 @@ export default function Projects() {
                     <div className="w-full h-auto grid gap-5">
                       <div className="w-fit h-fit">
                         <h1
-                          className={`font-semibold text-lg ${item.textColor}`}
+                          className="font-semibold text-lg text-primary"
                         >
                           {item.title}
                         </h1>
                         <p className="font-light text-xs">{item.description}</p>
                       </div>
                       <div className="w-fit h-fit grid items-center gap-1">
-                        <h1 className={`font-medium text-sm ${item.textColor}`}>
+                        <h1 className="font-medium text-sm text-primary">
                           Tech Stack
                         </h1>
                         <div className="w-fit h-fit flex items-center gap-1">
@@ -277,7 +259,7 @@ export default function Projects() {
                             <>
                               <p
                                 key={stack.id}
-                                className={`font-light text-[10px] ${item.bgColor} bg-opacity-10 border ${item.borderColor} border-opacity-40 ${item.textColor} w-fit h-fit px-1 py-0.5 rounded`}
+                                className="font-light text-[10px] bg-primary bg-opacity-10 border border-primary border-opacity-40 text-primary w-fit h-fit px-1 py-0.5 rounded"
                               >
                                 {stack.name}
                               </p>
@@ -289,7 +271,7 @@ export default function Projects() {
                     <a
                       href={item.url}
                       target="_blank"
-                      className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 ${item.borderColor} border-opacity-50`}
+                      className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b border-primary border-opacity-50"
                     >
                       <button className="w-fit h-fit text-xs text-primary">
                         {item.textButton}

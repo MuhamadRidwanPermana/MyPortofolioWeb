@@ -8,9 +8,6 @@ const projectsMobile = [
     title: "Weather App",
     description: "Weather App using OpenWeather API and PWA",
     image: Images_project_mobile1,
-    textColor: "text-[#444444]",
-    bgColor: "bg-[#444444]",
-    borderColor: "border-[#444444]",
     techStack: [
       {
         id: 1,
@@ -29,9 +26,6 @@ const projectsMobile = [
     title: "YourNote. App",
     description: "Note App using LocalStorage and PWA",
     image: Images_project_mobile2,
-    textColor: "text-[#FB923C]",
-    bgColor: "bg-[#FB923C]",
-    borderColor: "border-[#FB923C]",
     techStack: [
       {
         id: 1,
@@ -54,7 +48,7 @@ export default function Mobile() {
         <>
           <div
             key={index}
-            className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500"
+            className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 border-primary"
           >
             <div className="lg:w-96 w-full h-auto">
               <img
@@ -66,13 +60,13 @@ export default function Mobile() {
             <div className="w-full h-auto mt-5 grid gap-7">
               <div className="w-full h-auto grid gap-5">
                 <div className="w-fit h-fit">
-                  <h1 className={`font-semibold text-lg ${item.textColor}`}>
+                  <h1 className="font-semibold text-lg text-primary">
                     {item.title}
                   </h1>
                   <p className="font-light text-xs">{item.description}</p>
                 </div>
                 <div className="w-fit h-fit grid items-center gap-1">
-                  <h1 className={`font-medium text-sm ${item.textColor}`}>
+                  <h1 className="font-medium text-sm text-primary">
                     Tech Stack
                   </h1>
                   <div className="w-fit h-fit flex items-center gap-1">
@@ -80,7 +74,7 @@ export default function Mobile() {
                       <>
                         <p
                           key={index}
-                          className={`font-light text-[10px] ${item.bgColor} bg-opacity-10 border ${item.bgColor} border-opacity-40 ${item.textColor} w-fit h-fit px-1 py-0.5 rounded`}
+                          className="font-light text-[10px] bg-primary bg-opacity-10 border border-primary border-opacity-40 text-primary w-fit h-fit px-1 py-0.5 rounded"
                         >
                           {stack.name}
                         </p>
@@ -92,7 +86,7 @@ export default function Mobile() {
               <a
                 href={item.url}
                 target="_blank"
-                className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 ${item.borderColor} border-opacity-50`}
+                className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b border-primary border-opacity-50"
               >
                 <button className="w-fit h-fit text-xs text-primary">
                   {item.textButton}

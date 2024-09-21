@@ -58,7 +58,7 @@ export default function DetailProjects() {
         {/* <TittleSection title="Projects" subtitle="My Recently Projects" /> */}
 
         <div id="menuProjects" className="lg:w-fit w-full h-full grid justify-center">
-          <div className="sticky lg:top-20 top-5 z-10 w-fit h-fit mx-auto bg-white p-3 flex gap-1 justify-center border-secondary rounded-xl">
+          <div className="sticky lg:top-20 top-5 z-10 w-fit h-fit mx-auto bg-white p-3 flex gap-1 justify-center rounded-xl">
             {category.map((item) => (
               <button
                 key={category.id}

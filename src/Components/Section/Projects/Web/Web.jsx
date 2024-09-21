@@ -17,9 +17,6 @@ export default function Web() {
       title: "Tahungoding",
       description: "Official Website for Tahungoding",
       image: Images_project_web1,
-      textColor: "text-[#e8ca21]",
-      bgColor: "bg-[#e8ca21]",
-      borderColor: "border-[#e8ca21]",
       techStack: [
         {
           id: 1,
@@ -42,9 +39,6 @@ export default function Web() {
       title: "Smart Grosir Lite",
       description: "A Lite version of Smart Grosir",
       image: Images_project_web2,
-      textColor: "text-[#1f8bff]",
-      bgColor: "bg-[#1f8bff]",
-      borderColor: "border-[#1f8bff]",
       techStack: [
         {
           id: 1,
@@ -67,9 +61,6 @@ export default function Web() {
       title: "Median",
       description: "Web-based social publishing platform website",
       image: Images_project_web3,
-      textColor: "text-[#005555]",
-      bgColor: "bg-[#005555]",
-      borderColor: "border-[#005555]",
       techStack: [
         {
           id: 1,
@@ -88,9 +79,6 @@ export default function Web() {
       title: "TIKET-KA",
       description: "Website for booking train tickets",
       image: Images_project_web4,
-      textColor: "text-[#002662]",
-      bgColor: "bg-[#002662]",
-      borderColor: "border-[#002662]",
       techStack: [
         {
           id: 1,
@@ -109,9 +97,6 @@ export default function Web() {
       title: "Furnify",
       description: "Ecommerce Website for Furniture",
       image: Images_project_web5,
-      textColor: "text-[#C6A385]",
-      bgColor: "bg-[#C6A385]",
-      borderColor: "border-[#C6A385]",
       techStack: [
         {
           id: 1,
@@ -135,9 +120,6 @@ export default function Web() {
       description:
         "Website for Assignment Services for students and college students",
       image: Images_project_web6,
-      textColor: "text-[#A2DC4D]",
-      bgColor: "bg-[#A2DC4D]",
-      borderColor: "border-[#A2DC4D]",
       techStack: [
         {
           id: 1,
@@ -164,7 +146,7 @@ export default function Web() {
           <>
             <div
               key={item.id}
-              className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500"
+              className="w-full h-fit bg-white p-8 rounded-2xl border border-primary border-opacity-20"
             >
               <div className="lg:w-96 w-full h-auto">
                 <img
@@ -176,7 +158,7 @@ export default function Web() {
               <div className="w-full h-auto mt-5 grid gap-7">
                 <div className="w-full h-auto grid gap-5">
                   <div className="w-fit h-fit">
-                    <h1 className={`font-semibold text-lg ${item.textColor}`}>
+                    <h1 className="font-semibold text-lg text-primary">
                       {item.title}
                     </h1>
                     <p className="font-light text-xs">{item.description}</p>
@@ -184,7 +166,7 @@ export default function Web() {
                   <div
                     className="w-fit h-fit grid items-center gap-1"
                   >
-                    <h1 className={`font-medium text-sm ${item.textColor}`}>
+                    <h1 className="font-medium text-sm text-primary">
                       Tech Stack
                     </h1>
                     <div
@@ -195,7 +177,7 @@ export default function Web() {
                         <>
                           <p
                             key={stack.id}
-                            className={`font-light text-[10px] ${item.bgColor} bg-opacity-10 border ${item.borderColor} border-opacity-40 ${item.textColor} w-fit h-fit px-1 py-0.5 rounded`}
+                            className="font-light text-[10px] bg-primary bg-opacity-10 border border-primary border-opacity-40 text-primary w-fit h-fit px-1.5 py-0.5 rounded"
                           >
                             {stack.name}
                           </p>
@@ -207,7 +189,7 @@ export default function Web() {
                 <a
                   href={item.url}
                   target="_blank"
-                  className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b-2 ${item.borderColor} border-opacity-50`}
+                  className="w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b border-primary border-opacity-50"
                 >
                   <button
                     className="w-fit h-fit text-xs text-primary"
