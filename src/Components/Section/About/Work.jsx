@@ -13,7 +13,7 @@ const data = [
     image: Tahungoding_logo,
     title: "Tahungoding",
     subtitle: "Frontend Web Development",
-    date: "August 2021 - August 2022",
+    date: "Aug 2021 - Aug 2022",
     techStack: [
       {
         id: 1,
@@ -46,9 +46,9 @@ const data = [
   {
     id: 2,
     image: Dishub_logo,
-    title: "Dinas Perhubungan Kabupaten Sumedang",
-    subtitle: "UI Design & Frontend Web Development - Project Trackeun",
-    date: "August 2022 - August 2023",
+    title: "Transportation Department",
+    subtitle: "UI Design - Project Trackeun",
+    date: "Aug 2022 - Aug 2023",
     techStack: [
       {
         id: 1,
@@ -91,7 +91,7 @@ const data = [
     image: IMCreative_logo,
     title: "IM Creative",
     subtitle: "Mentor Git and Github",
-    date: "October 2023 - September 2023",
+    date: "Oct 2023 - Sep 2023",
     techStack: [
       {
         id: 1,
@@ -126,7 +126,7 @@ const data = [
     image: Sadigit_logo,
     title: "PT Sawarga Digital Indonesia",
     subtitle: "Frontend Web Development - Internship",
-    date: "October 2023 - Desember 2023",
+    date: "Oct 2023 - Dec 2023",
     techStack: [
       {
         id: 1,
@@ -172,8 +172,8 @@ export default function Work() {
               key={index}
               className="w-full h-fit pb-5 border-b border-primary border-opacity-40"
             >
-              <div className="flex justify-between items-end ">
-                <div className="w-full h-fit flex justify-start">
+              <div className="grid">
+                <div className="bg- w-full h-fit flex justify-start items-center">
                   <div className="flex items-center w-11 h-auto rounded-full">
                     <img src={item.image} alt="" className="p-1" />
                   </div>
@@ -181,14 +181,16 @@ export default function Work() {
                     <h1 className="font-semibold lg:text-lg text-primary">
                       {item.title}
                     </h1>
-                    <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
-                      {item.subtitle}
-                    </p>
+                <div className="w-full h-fit flex justify-between items-end">
+                  <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
+                    {item.subtitle}
+                  </p>
+                  <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
+                    {item.date}
+                  </p>
+                </div>
                   </div>
                 </div>
-                <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
-                  {item.date}
-                </p>
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.techStack.map((stack) => (

@@ -29,8 +29,8 @@ export default function Education() {
               key={index}
               className="w-full h-fit pb-5 border-b border-primary border-opacity-40"
             >
-              <div className="flex justify-between items-end">
-                <div className="w-full h-fit flex justify-start">
+              <div className="grid">
+                <div className="bg- w-full h-fit flex justify-start items-center">
                   <div className="flex items-center w-11 h-auto rounded-full">
                     <img src={item.image} alt="" className="p-1" />
                   </div>
@@ -38,14 +38,16 @@ export default function Education() {
                     <h1 className="font-semibold lg:text-lg text-primary">
                       {item.title}
                     </h1>
-                    <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
-                      {item.subtitle}
-                    </p>
+                <div className="w-full h-fit flex justify-between items-end">
+                  <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
+                    {item.subtitle}
+                  </p>
+                  <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
+                    {item.date}
+                  </p>
+                </div>
                   </div>
                 </div>
-                <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
-                  {item.date}
-                </p>
               </div>
             </div>
           </>

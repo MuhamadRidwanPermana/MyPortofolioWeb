@@ -15,5 +15,4 @@ export { default as Contact } from '@/Components/Section/Contact';
 export { default as Footer } from '@/Components/Section/Footer';
 
 export { default as TittleSection } from '@/Components/TittleSection';
-export { default as Section } from '@/Components/Section';
 export { default as ButtonScrollUp } from '@/Components/ButtonScrollUp';
