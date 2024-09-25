@@ -68,7 +68,7 @@ export default function Skills() {
       <section className="w-full h-full justify-center lg:px-0 lg:mt-36 lg:mb-72 px-8 my-12">
         <TittleSection title="Skills" subtitle="My Technical level" />
 
-        <div className="lg:flex lg:gap-16 grid gap-12 justify-center mt-16">
+        <div className="lg:flex md:flex lg:gap-16 grid gap-12 justify-center mt-16">
           <div className="lg:w-96 border border-primary rounded-xl lg:p-5 p-2">
             <h1 className="text-center text-primary text-xl font-medium py-2 mb-2">Frontend</h1>
 

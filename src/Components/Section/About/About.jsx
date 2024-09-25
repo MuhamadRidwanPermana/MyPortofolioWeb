@@ -1,7 +1,7 @@
-import React from "react";
-import { Popover } from 'antd';
-import { TittleSection } from "@/Components";
-import { Images_about, cv } from "@/assets";
+import React, { useState } from "react";
+import { Popover } from "antd";
+import { TittleSection, Experience } from "@/Components";
+import { Images_about } from "@/assets";
 
 export default function About() {
   const data = [
@@ -25,17 +25,54 @@ export default function About() {
     },
   ];
 
+  const scrollTo = () => {
+    window.scrollTo({
+      top: document.querySelector(`#learnAbout`).offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollTO = () => {
+    window.scrollTo({
+      top: document.querySelector(`#about`).offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const [ShowAbout, setShowAbout] = useState(true);
+  const toggleShowAbout = () => {
+    setShowAbout(!ShowAbout);
+
+    if (ShowAbout) {
+      // document.getElementById("simpleAbout").classList.add("hidden");
+      document.getElementById("detailAbout").classList.remove("hidden");
+      // document.getElementById("buttonLearnMore").innerHTML = "View Less";
+      scrollTo();
+    } else {
+      // document.getElementById("simpleAbout").classList.remove("hidden");
+      document.getElementById("detailAbout").classList.add("hidden");
+      // document.getElementById("buttonLearnMore").innerHTML = "Read More";
+      scrollTO();
+    }
+  };
+
   const HIMTIKA = (
     <div className="text-center">
-      <p className="font-semibold text-primary">Informatics Student Association</p>
-      <p className="text-[10px] italic text-secondary">Himpunan Mahasiswa Informatika</p>
+      <p className="font-semibold text-primary">
+        Informatics Student Association
+      </p>
+      <p className="text-[10px] italic text-secondary">
+        Himpunan Mahasiswa Informatika
+      </p>
     </div>
   );
 
   const UKM = (
     <div className="text-center">
       <p className="font-semibold text-primary">Student Activity Unit</p>
-      <p className="text-[10px] italic text-secondary">Unit Kegiatan Mahasiswa</p>
+      <p className="text-[10px] italic text-secondary">
+        Unit Kegiatan Mahasiswa
+      </p>
     </div>
   );
 
@@ -46,9 +83,12 @@ export default function About() {
         <div className="w-full h-full grid gap-16 lg:justify-center">
           <TittleSection title="About Me" subtitle="My Introduction" />
 
-          <div className="lg:w-fit w-full h-full lg:flex lg:gap-24 grid gap-5">
-            <div className="w-full h-full flex justify-center">
-              <div className="w-full lg:w-80 h-auto">
+          <div
+            id="simpleAbout"
+            className="lg:w-fit w-full h-full lg:flex md:flex lg:gap-24 md:gap-0 grid gap-5"
+          >
+            <div className="w-full h-full flex lg:justify-center">
+              <div className="max-w-full lg:max-w-80 md:max-w-80 h-auto">
                 <img
                   src={Images_about}
                   alt="image_about"
@@ -75,39 +115,48 @@ export default function About() {
                 ))}
               </div>
               <div className="mt-5">
-                <p className="text-primary font-normal text-sm lg:w-[30rem] lg:text-start text-center">
+                <p className="leading-6 text-primary font-normal text-sm lg:w-[30rem] lg:text-start md:text-start text-center">
                   I am a graduate of the Faculty of Information Technology,
                   Informatics study program. During college, I was active in
                   student activities such as{" "}
-                  <Popover content={UKM} className="font-semibold cursor-default">UKM</Popover>  <span className="font-semibold">Tahungoding</span> and
-                  served as a{" "}
+                  <Popover
+                    content={UKM}
+                    className="font-semibold cursor-default"
+                  >
+                    UKM
+                  </Popover>{" "}
+                  <span className="font-semibold">Tahungoding</span> and served
+                  as a{" "}
                   <span className="font-semibold">
                     Frontend Web Development Mentor
                   </span>{" "}
-                  and <Popover content={HIMTIKA} className="font-semibold cursor-default"> HIMTIKA </Popover>{" "}
+                  and{" "}
+                  <Popover
+                    content={HIMTIKA}
+                    className="font-semibold cursor-default"
+                  >
+                    {" "}
+                    HIMTIKA{" "}
+                  </Popover>{" "}
                   served as the{" "}
                   <span className="font-semibold">
-                    Coordinator of Research and Development Division{" "}
+                    Coordinator of Research and Development Division
                   </span>
-                  .
-                  {/* <button className="text-xs text-secondary w-fit h-fit px-1 hover:ml-2 hoever:pr-4 hover:border-b border-secondary duration-300">
-                    {" "}
-                    Learn More
-                  </button> */}
+                  . While actively involved in organizations, I learned how to
+                  work together as a team and solve problems together.
                 </p>
-                <div className="grid justify-center lg:justify-start">
-                  <a
-                    href={cv}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex gap-3 items-center mt-5 bg-primary text-white rounded-xl w-fit px-8 py-3 font-medium"
-                  >
-                    <p>Download CV</p>
-                    <i className="text-xl uil uil-file-alt"></i>
-                  </a>
-                </div>
+                <button
+                  id="buttonLearnMore"
+                  className="flex gap-2 hover:gap-3 items-center mt-5 text-xs text-secondary w-fit py-1 border-b border-white hover:border-b hover:border-secondary hover:border-opacity-50 duration-500 hover:pr-3 justify-center lg:mx-0 md:mx-0 mx-auto"
+                  onClick={toggleShowAbout}
+                >
+                  <p>Read more</p>
+                </button>
               </div>
             </div>
+          </div>
+          <div id="detailAbout" className="hidden">
+            <Experience />
           </div>
         </div>
       </section>

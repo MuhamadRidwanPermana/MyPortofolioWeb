@@ -141,7 +141,7 @@ export default function Web() {
 
   return (
     <>
-      <div className="animate__FadeIn w-full h-full justify-center grid lg:grid-cols-2 gap-16 duration-150">
+      <div className="animate__FadeIn w-full h-full justify-center grid lg:grid-cols-2 md:grid-cols-2 gap-16 duration-150">
         {projectWeb.map((item) => (
           <>
             <div

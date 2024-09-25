@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="w-full h-full">
           <TittleSection title="Contact" subtitle="Get in Touch" />
 
-          <div className="lg:flex grid gap-7 lg:gap-16 justify-center w-full h-full mt-16">
+          <div className="lg:flex md:flex grid gap-7 lg:gap-16 justify-center w-full h-full mt-16">
             {conactMe.map((item, index) => (
               <a
                 key={index}

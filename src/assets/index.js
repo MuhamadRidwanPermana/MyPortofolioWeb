@@ -14,3 +14,11 @@ export { default as Images_project_mobile2 } from "@/assets/images/project_mobil
 
 export { default as Images_project_design1 } from "@/assets/images/project_design1.jpg";
 export { default as Images_project_design2 } from "@/assets/images/project_design2.jpg";
+
+export { default as Sadigit_logo } from "@/assets/images/sadigit_logo.png";
+export { default as Tahungoding_logo } from "@/assets/images/tahungoding_logo.png";
+export { default as Dishub_logo } from "@/assets/images/dishub_logo.png";
+export { default as IMCreative_logo } from "@/assets/images/imcreative_logo.png";
+export { default as Unsap_logo } from "@/assets/images/unsap_logo.png";
+export { default as Man1S_logo } from "@/assets/images/man1s_logo.png";
+export { default as HIMTIKA_logo } from "@/assets/images/himtika_logo.png";

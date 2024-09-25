@@ -222,10 +222,10 @@ export default function Projects() {
             )}
           </div>
           </div> */}
-        <div className="w-full h-fit grid gap-24 justify-center mt-16">
+        <div className="w-full h-fit grid gap-16 justify-center mt-16">
           <div
             id="simpleProject"
-            className="w-full h-full justify-center grid lg:grid-cols-2 gap-16 duration-150"
+            className="w-full h-full justify-center grid lg:grid-cols-2 md:grid-cols-2 gap-16 duration-150"
           >
             {projects.map((item) => (
               <>
