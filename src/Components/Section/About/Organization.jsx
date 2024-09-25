@@ -70,14 +70,14 @@ export default function Organization() {
                     <h1 className="font-semibold lg:text-lg text-primary">
                       {item.title}
                     </h1>
-                <div className="w-full h-fit flex justify-between items-end">
-                  <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
-                    {item.subtitle}
-                  </p>
-                  <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
-                    {item.date}
-                  </p>
-                </div>
+                    <div className="w-full h-full flex justify-between items-end">
+                      <p className="lg:w-full w-1/2 h-fit lg:text-xs text-[10px] text-primary">
+                        {item.subtitle}
+                      </p>
+                      <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
+                        {item.date}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

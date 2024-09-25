@@ -181,21 +181,21 @@ export default function Work() {
                     <h1 className="font-semibold lg:text-lg text-primary">
                       {item.title}
                     </h1>
-                <div className="w-full h-fit flex justify-between items-end">
-                  <p className="lg:max-w-full md:max-w-full max-w-44 lg:text-xs text-[10px] text-primary">
-                    {item.subtitle}
-                  </p>
-                  <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
-                    {item.date}
-                  </p>
-                </div>
+                    <div className="w-full h-full flex justify-between items-end">
+                      <p className="lg:w-full w-1/2 h-fit lg:text-xs text-[10px] text-primary">
+                        {item.subtitle}
+                      </p>
+                      <p className="lg:w-full text-right lg:text-xs text-[10px] text-primary">
+                        {item.date}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.techStack.map((stack) => (
                   <>
-                    <p className="text-[10px] border border-primary border-opacity-40 bg-primary bg-opacity-10 text-primary w-fit h-fit px-2 py-0.5 rounded-lg">
+                    <p className="text-[10px] border border-primary border-opacity-40 bg-primary bg-opacity-10 text-primary w-fit h-fit px-2 py-0.5 rounded-md">
                       {stack.name}
                     </p>
                   </>
