@@ -57,8 +57,6 @@ const skills = {
   ],
 };
 
-// console.log(data);
-
 export default function Skills() {
   return (
     <>

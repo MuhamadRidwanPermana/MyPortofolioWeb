@@ -2,10 +2,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* section{
-  margin:11rem 0;
-} */
-
 .mouse-scroll {
   width: 20px;
   height: auto;
@@ -82,4 +78,3 @@
   backdrop-filter: blur(3px);
   animation-duration: 1s;
 }
-

@@ -44,14 +44,10 @@ export default function About() {
     setShowAbout(!ShowAbout);
 
     if (ShowAbout) {
-      // document.getElementById("simpleAbout").classList.add("hidden");
       document.getElementById("detailAbout").classList.remove("hidden");
-      // document.getElementById("buttonLearnMore").innerHTML = "View Less";
       scrollTo();
     } else {
-      // document.getElementById("simpleAbout").classList.remove("hidden");
       document.getElementById("detailAbout").classList.add("hidden");
-      // document.getElementById("buttonLearnMore").innerHTML = "Read More";
       scrollTO();
     }
   };

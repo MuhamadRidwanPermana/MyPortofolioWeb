@@ -1,4 +1,3 @@
-// export { default as Images_hero } from "@/assets/images/image_hero.jpg";
 export { default as cv } from "@/assets/document/CV_MRidwanPermana.pdf";
 
 export { default as Images_about } from "@/assets/images/image_about.jpg";

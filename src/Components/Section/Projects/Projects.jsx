@@ -1,47 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 import {
   TittleSection,
-  Web,
-  Mobile,
-  Design,
   DetailProjects,
 } from "@/Components";
-
-// const category = [
-//   {
-//     id: 0,
-//     title: "All",
-//   },
-//   {
-//     id: 1,
-//     title: "Web",
-//   },
-//   {
-//     id: 2,
-//     title: "Mobile",
-//   },
-//   {
-//     id: 3,
-//     title: "Design",
-//   },
-// ];
 
 import {
   Images_project_web1,
   Images_project_web2,
   Images_project_mobile1,
   Images_project_mobile2,
-  Images_project_design1,
-  // Images_project_design2,
 } from "@/assets";
 
 export default function Projects() {
-  // const [Category, setCategory] = useState(0);
-  // const handleCategory = (id) => {
-  //   setCategory(id);
-  // };
 
   const projects = [
     {
@@ -123,33 +94,7 @@ export default function Projects() {
       ],
       textButton: "Visit",
       url: "https://yournote-app.vercel.app/",
-    },
-    // {
-    //   id: 5,
-    //   title: "YourNote. App UI Design",
-    //   description: "UI Design for Note App.",
-    //   image: Images_project_design1,
-    //   techStack: [
-    //     {
-    //       id: 1,
-    //       name: "Figma",
-    //     },
-    //   ],
-    //   textButton: "View Detail",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Weather App UI Design",
-    //   description: "UI Design for Weather App.",
-    //   image: Images_project_mobile1,
-    //   techStack: [
-    //     {
-    //       id: 1,
-    //       name: "Figma",
-    //     },
-    //   ],
-    //   textButton: "View Detail",
-    // },
+    }
   ];
 
   const autoScrolltoTop = () => {
@@ -182,46 +127,6 @@ export default function Projects() {
 
       <section className="w-full  h-full grid justify-center lg:px-0 lg:mb-72 px-8 my-32">
         <TittleSection title="Projects" subtitle="My Recently Projects" />
-
-        {/* <div className="w-fit h-fit mx-auto bg-white p-3 flex gap-1 justify-center border-secondary rounded-xl">
-        <div className="lg:w-fit w-full h-full grid justify-center mt-16">
-            {category.map((item) => (
-              <button
-                key={category.id}
-                className="px-3 py-1 rounded-lg overflow-hidden text-primary hover:text-white hover:bg-primary transition-all duration-200 ${
-                  Category === item.id ? "bg-primary text-white" : "bg-white"
-                } "
-                onClick={() => handleCategory(item.id)}
-              >
-                <h1>{item.title}</h1>
-              </button>
-            ))}
-          </div>
-
-          <div className="w-full h-fit mt-16 grid">
-            {Category === 1 ? (
-              <>
-                <Web />
-              </>
-            ) : Category === 2 ? (
-              <>
-                <Mobile />
-              </>
-            ) : Category === 3 ? (
-              <>
-                <Design />
-              </>
-            ) : (
-              <>
-                <div className="w-full h-full grid justify-center gap-16">
-                  <ListProjectWeb />
-                  <Mobile />
-                  <Design />
-                </div>
-              </>
-            )}
-          </div>
-          </div> */}
         <div className="w-full h-fit grid gap-16 justify-center mt-16">
           <div
             id="simpleProject"

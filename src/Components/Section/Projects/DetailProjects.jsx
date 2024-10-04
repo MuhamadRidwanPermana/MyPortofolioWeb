@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import {
-  Navbar,
-  TittleSection,
   Web,
   Mobile,
   Design,
-  Footer,
-  ButtonScrollUp,
 } from "@/Components";
 
 const category = [

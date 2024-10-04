@@ -178,63 +178,6 @@ export default function Design() {
           </div>
         </Modal>
       </div>
-
-      {/* <div className=" w-full h-full justify-center grid lg:grid-cols-2 gap-16 duration-150">
-        {projectsDesign.map((item, index) => (
-          <>
-            <div
-              key={index}
-              className="w-full h-fit bg-white p-8 rounded-2xl border border-opacity-20 hover:border-opacity-10 border-primary hover:shadow-md duration-500 grayscale hover:grayscale-0"
-            >
-              <div className="lg:w-96 w-full h-auto">
-                <img
-                  key={index}
-                  src={item.image}
-                  alt="Project Web 1"
-                  className={`w-full h-full rounded-xl`}
-                />
-              </div>
-              <div className="w-full h-auto mt-5 grid gap-7">
-                <div className="w-full h-auto grid gap-5">
-                  <div className="w-fit h-fit">
-                    <h1 className={`font-semibold text-lg ${item.textColor}`}>
-                      {item.title}
-                    </h1>
-                    <p className="font-light text-xs">{item.description}</p>
-                  </div>
-                  <div className="w-fit h-fit grid items-center gap-1">
-                    <h1 className={`font-medium text-sm ${item.textColor}`}>
-                      Tech Stack
-                    </h1>
-                    <div className="w-fit h-fit flex items-center gap-1">
-                      {item.techStack.map((stack, index) => (
-                        <>
-                          <p
-                            key={index}
-                            className={`font-light text-[10px] ${item.bgColor} bg-opacity-10 border ${item.borderColor} border-opacity-40 ${item.textColor} w-fit h-fit px-1 py-0.5 rounded`}
-                          >
-                            {stack.name}
-                          </p>
-                        </>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <a
-                  href={item.url}
-                  target="_blank"
-                  className={`w-fit h-fit flex items-center gap-1 hover:gap-1.5 hover:duration-500 duration-300 cursor-pointer hover:border-b ${item.borderColor} border-opacity-50`}
-                >
-                  <button className="w-fit h-fit text-xs text-primary">
-                    {item.textButton}
-                  </button>
-                  <i className="bi bi-arrow-right-short text-primary"></i>
-                </a>
-              </div>
-            </div>
-          </>
-        ))}
-      </div> */}
     </>
   );
 }
